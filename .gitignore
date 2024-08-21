@@ -1,0 +1,20 @@
+# Ignore all
+*
+
+# Except git
+!.gitignore
+!LICENSE.md
+!README.md
+
+# Except GitHub
+!/.github
+!/.github/**
+
+# Except code
+!/include
+!/include/**
+!/source
+!/source/**
+
+# Except CMake
+!CMakeLists.txt
