@@ -1,6 +1,8 @@
 #ifndef AOC_H
 #define AOC_H
 
+#include <stddef.h>
+
 /*
  * An Advent of Code Input.
  *
@@ -22,12 +24,11 @@ typedef struct Input
  * Parameters:
  * - year: The year of the problem.
  * - day: The day of the problem.
- * - sessionCookie: The session cookie of the user. (TODO: put this in an env file or something)
  * 
  * Returns:
  * - {NULL, 0} if something went wrong.
  * - The problem input if everything went correctly.
  */
-Input getInput(unsigned year, unsigned day, const char* sessionCookie);
+Input getInput(unsigned year, unsigned day);
 
 #endif
